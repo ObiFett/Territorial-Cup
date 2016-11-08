@@ -1,0 +1,261 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body {
+	line-height: 1;
+	background-color:#FFFFFF;
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#banner {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#banner img {
+	width:450px
+}
+
+#main {
+	margin-left:auto;
+	margin-right:auto;
+	height: 100%;
+	width: 100%;
+}
+
+#main img{
+	margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+#tab-left {
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:30px;
+	padding-right:30px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#wordField {
+	width: 40%;
+	float: left;
+	padding-bottom: 80px;
+}
+
+#formData{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+#buttonField{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.newGame,.resumeGame,.joinGame,.surrenderGame,.statistics,.accountSettings,.signOut,.createGame,.randomOpponent,.returnToLobby {
+	-moz-box-shadow:inset 0px 1px 0px 0px #e184f3;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #e184f3;
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c123de), color-stop(1, #a20dbd) );
+	background:-moz-linear-gradient( center top, #c123de 5%, #a20dbd 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c123de', endColorstr='#a20dbd');
+	background-color:#c123de;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #a511c0;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	font-style:normal;
+	height:45px;
+	line-height:45px;
+	width:380px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #9b14b3;
+	margin-top: 10px;
+}
+.newGame:hover,.resumeGame:hover,.joinGame:hover,.surrenderGame:hover,.statistics:hover,.accountSettings:hover,.signOut:hover,.createGame:hover,.randomOpponent:hover,.returnToLobby:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a20dbd), color-stop(1, #c123de) );
+	background:-moz-linear-gradient( center top, #a20dbd 5%, #c123de 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a20dbd', endColorstr='#c123de');
+	background-color:#a20dbd;
+}
+.newGame:active,.resumeGame:active,.joinGame:active,.surrenderGame:active,.statistics:active,.accountSettings:active,.signOut:active,.createGame:active,.randomOpponent:active,.returnToLobby:active {
+	position:relative;
+	top:1px;
+}
+
+/* iPhone */
+@media screen and (max-device-width: 444px) {
+	#banner { }
+	#banner img { width:320px;}
+	#main { /*width:320px; height:444px;*/}
+	.newGame,.resumeGame,.joinGame,.surrenderGame,.statistics,.accountSettings,.signOut,.createGame,.randomOpponent,.returnToLobby {
+	font-size:17px;
+	height:30px;
+	line-height:30px;
+	width:180px;
+	margin-top:4px;
+	}
+	#formData{
+	}
+	#buttonField{
+	width: 190px;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-device-width : 320px) {
+	#banner { width:100% }
+	#banner img { width: 100%; /*width:320px;*/}
+	#main { width: 100%; height:100%; /*max-width:320px; */}
+	.newGame,.resumeGame,.joinGame,.surrenderGame,.statistics,.accountSettings,.signOut,.createGame,.randomOpponent,.returnToLobby {
+	font-size:17px;
+	height:30px;
+	line-height:30px;
+	width:90%;
+	margin-top:4px;
+	}
+	#formData{
+	
+	}
+	#buttonField{
+	
+	}
+}
+
+/* intermediate screens*/
+@media screen and (min-device-width: 445px) 
+and (max-device-width: 1223px)
+{
+    #main { width:100%;}
+	#formData{
+		
+	}
+	#buttonField{
+	width: 382px;
+		
+	}
+}
+		
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    #main {}
+	#formData{
+		
+	}
+	#buttonField{
+		
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    #main {}
+	.newGame,.resumeGame,.joinGame,.surrenderGame,.statistics,.accountSettings,.signOut,.createGame,.randomOpponent,.returnToLobby {
+	font-size:20px;
+	height:50px;
+	line-height:50px;
+	width:80%;
+	margin-top:4px;
+	}
+	#formData{
+		
+	}
+	#buttonField{
+		
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-device-width : 1024px) {
+	#main{width: 100%; }
+	#formData{
+		
+	}
+	#buttonField{
+		width:382px;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-device-width : 1824px) {
+	#main{width: 100%; }
+	#formData{
+		
+	}
+	#buttonField{
+		width:382px;
+	}
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

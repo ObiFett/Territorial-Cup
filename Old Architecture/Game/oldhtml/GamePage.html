@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META charset="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width = device-width">
+<meta name="viewport" content="initial-scale = 1.0, user-scalable = no">
+<link href="http://territorialcup.azurewebsites.net/rsc/Gameboardstyles.css" rel="stylesheet" type="text/css" />
+<title>Territorial Cup: Duel in the Desert - Game</title>
+<script src="./rsc/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+<div id="main" class="gamePage">
+	<div id="banner"><img src="http://territorialcup.azurewebsites.net/rsc/Logo.png" /></div>
+	
+	<div id="formData">
+		<div id="scores">
+			<div id="player1" class="playerName selectedPlayer">ASUSmartie
+				<div class ="score">0</div>
+			</div>
+			
+			<div id="player2" class="playerName">UAFool
+				<div class ="score">0</div>
+			</div>
+		</div>
+		
+		<div id="wordInfo">
+			<div id="wordField">
+				<form id="gameForm" action="./game/submitTurn" method="post">
+					<input id="wordBuilt" readonly="true" name="word" />
+				</form>
+			</div>
+            
+			<div id="buttonField">
+                <a href="#" id = "clearWord" class="clearWord">Clear</a>
+                <a href="#" id= "submitWord" class="submitWord">Submit</a>
+            </div>
+			
+			<div id="errorMessage"></div>
+		</div>
+
+    <div id="gameBoard"></div>
+	</div>
+</div>
+</body>
+<script src="./rsc/gameBoard.js"></script>
+</html>

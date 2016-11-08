@@ -1,0 +1,192 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, h7, h8, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END RESET */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body {
+	
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #EEE;
+	font-family: helvetica;
+	font-size: 12px;
+}
+
+input[type=text],
+select{
+	width: 100%;
+	height: 30px;
+}
+.wrapper {
+	position: relative;
+}
+
+/*Defaults*/
+		#banner {
+                margin-left:auto;
+                margin-right:auto;
+                background-color:#A9D0F5;
+                width:100%;
+				height: 20%;
+				margin: 0 auto;
+                }
+        
+        #banner img {
+				margin: 0 auto;
+                width:50%;
+				height: 100%;
+        }
+        #main {
+                margin-left:auto;
+                margin-right:auto;
+                background-color:#A9D0F5;
+                width:100%;
+                height:100%;
+        }
+        #main img {
+                margin-left:auto;
+                margin-right:auto;
+                padding-top: 10px;
+                display: block;
+        }
+	#tab-left {
+		margin-left:auto;
+		margin-right:auto;
+		padding-left:30px;
+		padding-right:30px;
+		word-break: break-all;
+		word-wrap: break-word;
+	}
+		#accountFormText{
+			/*height: 50%;*/
+			border: solid 1px #666;
+			background-color:white;
+			border-radius: 5px;
+			top: 10%;	
+			width: 90%;
+			/*height: 85%;*/
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+	
+    #banner img { width:45%;}
+	#main { /*width:320px; height:444px;*/ }
+	#main img { /*max-width: 260px;*/ }
+	#accountFormText{padding:5px; top:0%;}
+}
+
+/* iPhone */
+@media screen and (max-width: 444px) {
+    #banner img { width:50%;}
+    #main { /*width:320px; height:444px;*/}
+	#main img { /*max-width: 260px;*/ }
+	#accountFormText{padding: 5px; top:0%;}
+}
+
+/* intermediate screens*/
+@media screen and (min-width: 444px) 
+and (max-width: 1223px)
+{
+	#banner { width:100%; height: 25%; }
+    #banner img { width:40%;}
+    #main { /*width:320px; height:444px;*/}
+	#main img { /*max-width: 260px;*/ }
+	#accountFormText{padding: 5px; top:0%;}
+}
+		
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+    #banner img { width:40%;}
+    #main { /*width:750px; height:920px;*/ padding-top: 5px; }
+	#main img { /*max-width: 920px;*/ }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+    #banner img { width:40%;}
+    #main { /*width:750px; height:920px;*/ padding-top: 5px; }
+	#main img { /*max-width: 920px;*/ }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	#banner img{width:35%;}
+	#main{padding-top: 15px;}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+	#banner img{width:30%;}
+	#main{padding-top: 20px;}
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
